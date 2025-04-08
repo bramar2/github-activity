@@ -1,7 +1,7 @@
-# github-activity: A CLI tool for fetching Github Activity
+# github-activity: A CLI tool for fetching Github Activity (Windows)
 [https://roadmap.sh/projects/task-tracker](https://roadmap.sh/projects/github-user-activity)
 ## Code
-The project uses CMake and C++23 standard. Uses modified bramar2/json library put directly into this project.
+The project uses CMake and C++23 standard. Uses modified bramar2/json library put directly into this project. Windows only.
 ## Building
 On root, run the following commands:
 - `cmake -S . -B build/`
