@@ -6,9 +6,6 @@
 namespace githubactivity {
 
 	inline constexpr std::string_view USER_AGENT = "github-activity github.com/bramar2/github-activity";
-	inline constexpr char HEADERS[] =
-R"(Accept: */*
-Accept-Language: en-US,en;q=0.9,id;q=0.8)";
 
 	class connection_error : std::exception {
 	public:
