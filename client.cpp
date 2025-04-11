@@ -26,31 +26,6 @@ namespace githubactivity {
 		}
 
 		return connection;
-
-		// char buf[1024];
-		// DWORD read;
-		// while (InternetReadFile(connection, buf, std::size(buf), &read) && read > 0) {
-		// 	result.append(buf, read);
-		// }
-
-		// DWORD statusCode = 0;
-		// DWORD size = sizeof(statusCode);
-		// if (bool res = HttpQueryInfo(connection, HTTP_QUERY_STATUS_CODE | HTTP_QUERY_FLAG_NUMBER, &statusCode, &size, NULL); !res) {
-		// 	DWORD queryError = GetLastError();
-		// 	if (bool res = InternetCloseHandle(connection); !res) {
-		// 		throw connection_error("InternetCloseHandle() failure, error code " + std::to_string(GetLastError()));
-		// 	}
-		// 	throw connection_error("HttpQueryInfo() failure, error code " + std::to_string(queryError));
-		// }
-
-		// if (bool res = InternetCloseHandle(connection); !res) {
-		// 	throw connection_error("InternetCloseHandle() failure, error code " + std::to_string(GetLastError()));
-		// }
-
-		// if (200 <= statusCode && statusCode <= 299) {
-		// 	return;
-		// }
-		// throw connection_error("Bad status code received: " + std::to_string(statusCode));
 	}
 
 	DWORD get_status_code(HINTERNET connection) {
